@@ -1,0 +1,15 @@
+.card{
+    background-color: #FAD7A0;
+}
+.fa-trash{
+    color: red;
+    right: 0px;
+}
+.header{
+    background-color: #EB984E;
+    opacity:0.4;
+    color: black;
+    height: 15px;
+    margin-top: 15px;
+    text-align:center;
+}
