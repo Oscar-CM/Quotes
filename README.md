@@ -22,23 +22,23 @@ The icons sizes are affected when one clicks on any of them
 
 ## Behaviour Driven Developement
 **On loading the page**
-*One should be able to see the tittle, the button to add a quote and the already added quotes
+* One should be able to see the tittle, the button to add a quote and the already added quotes
 **On clicking the add quote button**
-*A form will appear prompting the user to add the details of their quote
-** When a field is empty**
-*There will be a reminder below the input area reminding the user that it cannot be blank
+* A form will appear prompting the user to add the details of their quote
+**When a field is empty**
+* There will be a reminder below the input area reminding the user that it cannot be blank
 **Adding a blank form**
-*The add button will not work if any of the inputs is blank
-** On adding**
-*The details of the quote will be added the the already existing quites
+* The add button will not work if any of the inputs is blank
+**On adding**
+* The details of the quote will be added the the already existing quites
 **Quote cards**
-*The quotes will be arrangad adjacent to one another with their resoective detail
-** On clicking the thrash icon on the header**
-*The quote and all its details will be removed
+* The quotes will be arrangad adjacent to one another with their resoective detail
+**On clicking the thrash icon on the header**
+* The quote and all its details will be removed
 **On clicking the like and dislike icons**
-*The number on either of them will increase on click
+* The number on either of them will increase on click
 **Card Body**
-*The card body wll have hte quote, the author, the peron who posted it and the time of posting
+* The card body wll have hte quote, the author, the peron who posted it and the time of posting
 
 ## Development server
 
