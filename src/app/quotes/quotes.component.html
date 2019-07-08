@@ -6,7 +6,7 @@
 <p>  Post your fovourite quote to inspire other people
   <button class="btn btn-info" (click)="newQuote()">SHARE A QUOTE</button>
   </p>
-<form (ngSubmit)="onSave()" #userForm = "ngForm" *ngIf="showNew">
+<form (ngSubmit)="saveQuote()" #userForm = "ngForm" *ngIf="showNew">
 
   
 	<h3> Enter Quote details</h3>
@@ -16,7 +16,7 @@
       <input  #name = "ngModel" required  [(ngModel)] = "quotesModel.author" name="author" type="text" class="form-control"  placeholder="The sayer of the quote">
     
     <div>
-    <small *ngIf = "name.touched && !name.valid" class = "text-danger"> Enter the value</small>
+    <small *ngIf = "name.touched && !name.valid" class = "text-danger"> Enter the author's name</small>
     </div>
     </div>
     </div>
@@ -26,7 +26,7 @@
     <div class="col-md-10">
       <input type="text" required #submitter = "ngModel"  [(ngModel)] = "quotesModel.submitter" name = "submitter"class="form-control" placeholder="Your name" >
       <div>
-      <small *ngIf = "submitter.touched && !submitter.valid" class = "text-danger"> Enter a value</small>
+      <small *ngIf = "submitter.touched && !submitter.valid" class = "text-danger"> Enter your name</small>
       </div>
     </div>
   </div>
@@ -35,13 +35,13 @@
     <div class="col-md-10">
       <textarea type="text" required #say = "ngModel"  [(ngModel)] = "quotesModel.say" name = "say"class="form-control" placeholder="The quote"></textarea>
       <div>
-      <small *ngIf = "say.clicked && !say.valid" class = "text-danger">Enter a value</small>
+      <small *ngIf = "say.clicked && !say.valid" class = "text-danger">Enter the quote</small>
       </div>
 
     </div>
   </div>
 
-  <button class="btn-success" name = "submission" [disabled]="userForm.invalid"> ADD A QUOTE </button>
+  <button class="btn-success" name = "submission" [disabled]="userForm.invalid"> ADD A QUOTE </button><br><br>
  
 
 </form>

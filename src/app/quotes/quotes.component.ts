@@ -18,7 +18,7 @@ export class QuotesComponent implements OnInit {
     this.submitType = 'Save';
   }
   
-  onSave() {
+  saveQuote() {
     if (this.submitType === 'Save') {
       this.quotes.push(this.quotesModel);
     }
