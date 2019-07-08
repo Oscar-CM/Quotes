@@ -32,9 +32,9 @@ export class QuotesComponent implements OnInit {
 quotes =  [
 new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
 new Quotes ( 'Bob Colymore', 'The road to success is hard only the strong hearted make it','oscar',new Date(),0,0),
-new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
-new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
-new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
+new Quotes ( 'Carlse Champ', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Job',new Date(2019,3,4),0,0),
+new Quotes ( 'Garry Kaparov', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Mark',new Date(2019,10,7),0,0),
+new Quotes ( 'Bill Gates', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,7,5),0,0),
 
 ];
 
