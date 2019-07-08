@@ -9,16 +9,16 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
 
+ showNew: Boolean = false;
   quotesModel: Quotes;
-  showNew: Boolean = false;
   submitType: string = 'Save';
+
+
  
 
   onNew() {
     this.quotesModel = new Quotes("", "", "",new Date(), 0, 0);
-
     this.submitType = 'Save';
-
     this.showNew = true;
   }
    
@@ -26,10 +26,8 @@ export class QuotesComponent implements OnInit {
 
   onSave() {
     if (this.submitType === 'Save') {
-
       this.quotes.push(this.quotesModel);
     }
-
     this.showNew = false;
   }
 
@@ -40,8 +38,11 @@ export class QuotesComponent implements OnInit {
   }
 
 quotes =  [
-new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019),0,0),
+new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
 new Quotes ( 'Bob Colymore', 'The road to success is hard only the strong hearted make it','oscar',new Date(),0,0),
+new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
+new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
+new Quotes ( 'Isaac Newton', 'Gravity is a force that pulls things toward the Earth, an it affects all the features on Earth', 'Oscar',new Date(2019,2,12),0,0),
 
 ];
 delete(i) {
