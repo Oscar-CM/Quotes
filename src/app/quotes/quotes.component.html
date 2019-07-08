@@ -4,9 +4,9 @@
 <h1> INPIRATIONAL QUOTES</h1>
 </div>
 <p>  Post your fovourite quote to inspire other people
-  <button (click)="onNew()" class="btn btn-info form-btn" id="form-btn">SHARE A QUOTE</button>
+  <button class="btn btn-info" (click)="newQuote()">SHARE A QUOTE</button>
   </p>
-<form #userForm = "ngForm" (ngSubmit)="onSave()" *ngIf="showNew" id="quote-form">
+<form (ngSubmit)="onSave()" #userForm = "ngForm" *ngIf="showNew">
 
   
 	<h3> Enter Quote details</h3>
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <button class="text-success" name = "submission" [disabled]="userForm.invalid"> ADD A QUOTE </button>
+  <button class="btn-success" name = "submission" [disabled]="userForm.invalid"> ADD A QUOTE </button>
  
 
 </form>
@@ -53,7 +53,7 @@
 
     <div class="card" *ngFor='let quote of quotes;let i = index'  >
      <div class="card-header">
-        <span class = "btn-danger" (click)="delete(i)" class="del">
+        <span class = "btn-danger" (click)="deleteQuote(i)" class="del">
           <i class="fa fa-trash"></i>
         </span>
       </div>
