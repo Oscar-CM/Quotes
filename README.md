@@ -1,4 +1,9 @@
-# Quotes
+# Inspiorational  Quotes
+
+#### This site will provide details on quotes
+#### By  **Oscar Cheruiyot Maritim**
+## Description
+The project will allow the user to view the details 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
 
